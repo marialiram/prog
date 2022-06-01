@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("astro.png") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 74px;
+    font-size: 45px;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 70px;
+    font-size: 15px;
+} 
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+    margin-left: 6x;
+}
+
+/* Elemento de tag <body> */
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-left: 10%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: blue;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: rgb(225, 0, 255);
+    display: block;
+    margin-left: 10px;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 2px solid #574ce7;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+    display: block;
+    background: white;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #d5e8ff;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.3em;
+    width: 200px;
+    height: 45px;
+    background: #3d7dca;
+    border: 0;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 22%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #cf3de2;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+    transition: 1s;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
